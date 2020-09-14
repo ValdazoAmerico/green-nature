@@ -7,7 +7,7 @@ body{
     font-family: 'Lato', sans-serif;
 }
 .nav-bg{
-    background: rgba(255,255,255,0.5);
+    background: rgba(255,255,255,0.8);
     padding: 0!important;
 }
 .navbar-nav .nav-link{
@@ -42,8 +42,9 @@ body{
     right:0;
     left:0;
     bottom:0;
-    
-
+}
+.fa-whatsapp{
+    color:green;
 }
 /* Hero */
 .titulos{
@@ -166,14 +167,14 @@ body{
     transition:0.5s;
     line-height: 1;
     margin:10px;
-    color:#fff;
+    color:beige;
     animation-delay:0.5s;
-    border:2px solid rgba(255,255,255,0.5);
-    background: rgba(0, 0, 0, 0.329);
+    border:2px solid beige;
+    background: #000;
 }
 
 #hero .hero-btn:hover{
-    background: #0a6801;
+    background: #073763;;
     color: #fff;
     text-decoration: none;
 }
@@ -223,6 +224,7 @@ body{
     }
 }
 
+
 /* Nosotros */
 #servicios > .container{
     border:1px solid #000;
@@ -246,7 +248,7 @@ body{
 }
 .tabs .nav-pills .nav-item .nav-link.active{
     color:#fff;
-    background: rgba(0, 0, 0, 0.459);
+    background: #073763;
     /* border: 1px solid #9ef596; */
 }
 .tabs .nav-pills .nav-item .nav-link.active span{
