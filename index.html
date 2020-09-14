@@ -14,7 +14,7 @@
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     <!-- googlefonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     <!-- animate.css -->
     <link
     rel="stylesheet"
@@ -24,15 +24,18 @@
   <body>
       <!-- nav -->
       <nav class="navbar navbar-expand-lg navbar-light nav-bg fixed-top py-2" id="mainNav">
+        
       <div class="container">
-        <a class="navbar-brand text-white" href="#">M. Licciardi Construcciones</a>
+        <div class="logo-container animate__animated animate__backInDown">
+        <img class="logo" src="Images/m.png" alt=""></div>
+        <!-- <a class="navbar-brand text-white" href="#">M. Licciardi Construcciones</a> -->
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"data-target="#myNavbar"aria-controls="myNavbar"aria-expanded="false"aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="myNavbar">
+        <div class="collapse navbar-collapse animate__animated animate__backInDown" id="myNavbar">
           <ul class="navbar-nav ml-auto my-2 my-lg-0">
             <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Sobre mi</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Sobre mí</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Servicios</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Trabajos</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Presupuesto</a></li>
@@ -42,18 +45,23 @@
       </nav>
       <!-- Hero -->
       <section id="hero" class="d-flex justify-content-center align-items-center">
+        <div class="titulos">
+        <h1 class="titulo animate__animated animate__backInDown   ">Mauro Licciardi</h1>
+        <h3 class="titulo2 animate__animated animate__backInDown">Construcción</h3>
+      </div>
         <div id="heroCarousel"class="container carousel carousel-fade"data-ride="carousel">
           <!-- slide1 -->
           <div class="carousel-item active">
             <div class="carousel-container">
-              <h2 class="animate__animated animate__backInDown">
+              <!-- <h2 class="animate__animated animate__backInDown">
                 Servicios de <span>Construcción/Albañilería</span>
-              </h2>
+              </h2> -->
               <p class="animate__animated animate__fadeInUp">
-                Revestimiento, albañilería, instalación eléctrica, sanitaria, pluvial, pintura. Plastificado. Trabajos de herrería. Asesoramiento A Domicilio.
-              </p>
+                Asesoramiento a Domicilio - Presupuesto Sin Cargo<br>
+                Atención Personalizada<br>
+               </p>
               <a href="#"class="btn hero-btn animate__animated animate__backInUp">
-                Ver Más
+                Más Info
               </a>
             </div>
           </div>
@@ -61,14 +69,15 @@
           <!-- slide2 -->
           <div class="carousel-item">
             <div class="carousel-container">
-              <h2 class="animate__animated animate__backInDown">
+              <!-- <h2 class="animate__animated animate__backInDown">
                 Lorem Ipsum
-              </h2>
+              </h2> -->
               <p class="animate__animated animate__fadeInUp">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam voluptas accusantium eveniet ullam delectus optio error ex iure! Repudiandae, molestiae?
+                Albañilería - Pintura - Electricidad<br>
+                Sanitarios - Plomería<br>
               </p>
               <a href="#"class="btn hero-btn animate__animated animate__backInUp">
-                Read More
+                Más Info
               </a>
             </div>
           </div>
@@ -76,14 +85,15 @@
           <!-- slide3 -->
           <div class="carousel-item">
             <div class="carousel-container">
-              <h2 class="animate__animated animate__backInDown">
+              <!-- <h2 class="animate__animated animate__backInDown">
                 Lorem Ipsum-2
-              </h2>
+              </h2> -->
               <p class="animate__animated animate__fadeInUp">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam voluptas accusantium eveniet ullam delectus optio error ex iure! Repudiandae, molestiae?
-              </p>
+                Impermeabilización - Techos - Terrazas<br>
+                Frentes - Pisos<br>
+                </p>
               <a href="#"class="btn hero-btn animate__animated animate__backInUp">
-                Read More
+                Más Info
               </a>
             </div>
           </div>
@@ -103,12 +113,11 @@
 
 
       <!-- Nosotros -->
-      <section class="mt-5">
+      <section id="servicios" class="mt-5">
         <div class="container">
           <div class="row justify-content-center mb-5">
             <div class="col-md-8 text-center heading-section">
-              <span>¿Quién Soy?</span>
-              <h2 class="mb-3">Maestro Mayor de Obras | Albañilería | Construcción</h2>
+              <h2 class="mb-3 pt-3">Servicios</h2>
             </div>
           </div>
 
@@ -116,63 +125,58 @@
             <div class="col-md-4">
               <ul class="nav nav-pills nav-fill d-md-flex d-block flex-column">
                 <li class="nav-item text-left">
-                  <a class="nav-link active py-4"data-toggle="tab" href="#about-1">Información</a>
+                  <a class="nav-link active py-4"data-toggle="tab" href="#about-1">Construcción</a>
                 </li>
                 <li class="nav-item text-left">
-                  <a class="nav-link py-4"data-toggle="tab" href="#about-2">Servicios</a>
+                  <a class="nav-link py-4"data-toggle="tab" href="#about-2">Pintura</a>
                 </li>
                 <li class="nav-item text-left">
-                  <a class="nav-link py-4"data-toggle="tab" href="#about-3">Proyectos</a>
+                  <a class="nav-link py-4"data-toggle="tab" href="#about-3">Electricidad</a>
                 </li>
                 <li class="nav-item text-left">
-                  <a class="nav-link py-4"data-toggle="tab" href="#about-4">Galería</a>
+                  <a class="nav-link py-4"data-toggle="tab" href="#about-4">Techos</a>
                 </li>
                 <li class="nav-item text-left">
-                  <a class="nav-link py-4"data-toggle="tab" href="#about-5">Planificación</a>
+                  <a class="nav-link py-4"data-toggle="tab" href="#about-5">Plomería</a>
                 </li>
-                <li class="nav-item text-left">
-                  <a class="nav-link py-4"data-toggle="tab" href="#about-6">Visión</a>
-                </li>
+                
               </ul>
             </div>
             <div class="col-md-8">
               <div class="tab-content">
                 <div class="tab-pane container p-0 active" id="about-1">
                   <div class="img about1"></div>
-                  <h3><a href="#">Información</a></h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi possimus exercitationem reiciendis facilis quibusdam, tenetur voluptas perspiciatis ea fuga ex!</p>
+                  <h3><a href="#">Construcción/Albañilería</a></h3>
+                  <p>Cimientos, Estructuras, Losas, Manposteria, Revoques, Pisos, Colocación de Aberturas, Colocación de Revestimientos, Ceramica, Porcelanatos, Piedras, Lajas, Baldosas, Revestimientos plasticos, Remodelaciones de Baños y Cocinas.
+                   </p>
                 </div>
                 <!-- ----  -->
                 <div class="tab-pane container p-0" id="about-2">
                   <div class="img about2"></div>
-                  <h3><a href="#">Servicios</a></h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi possimus exercitationem reiciendis facilis quibusdam, tenetur voluptas perspiciatis ea fuga ex!</p>
+                  <h3><a href="#">Pintura</a></h3>
+                  <p>Interior, Exterior, Latex, Esmalte Sintético, Acrílico, Lacado, Enduido, Barniz, Tarquini, Impermeabilizantes, Frentes, Contra Frentes, Medianeras, Terrazas.</p>
                 </div>
                 <!-- ----  -->
                 <div class="tab-pane container p-0" id="about-3">
                   <div class="img about3"></div>
-                  <h3><a href="#">Proyectos</a></h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi possimus exercitationem reiciendis facilis quibusdam, tenetur voluptas perspiciatis ea fuga ex!</p>
+                  <h3><a href="#">Electricidad</a></h3>
+                  <p>Iluminación, Instalación de tomas, Cambio de tomas, Enchufes, Instalación de Disyuntor, Térmicas, Protector de Tensión, Ventiladores</p>
                 </div>
                 <!-- ----  -->
                 <div class="tab-pane container p-0" id="about-4">
                   <div class="img about4"></div>
-                  <h3><a href="#">Galería</a></h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi possimus exercitationem reiciendis facilis quibusdam, tenetur voluptas perspiciatis ea fuga ex!</p>
+                  <h3><a href="#">Techos</a></h3>
+                  <p>Realización de techos de tejas, chapas, pizarras y pérgolas. Impermeabilización de lozas. Colocación y reparación de membranas, zinguerías y todo tipo de canaletas.
+                  </p>
                 </div>
                 <!-- ----  -->
                 <div class="tab-pane container p-0" id="about-5">
                   <div class="img about5"></div>
-                  <h3><a href="#">Planificación</a></h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi possimus exercitationem reiciendis facilis quibusdam, tenetur voluptas perspiciatis ea fuga ex!</p>
+                  <h3><a href="#">Plomería/Sanitarios</a></h3>
+                  <p>Plomería en general. Pruebas hidráulicas y reparación de filtraciones. Reparación e instalación de llaves de paso, grifería, bachas, sifones, flexibles, válvulas, mochilas de inodoro, bidets, termotanques y calefones, accesorios (baños, cocinas, lavaderos, etc).</p>
                 </div>
                 <!-- ----  -->
-                <div class="tab-pane container p-0" id="about-6">
-                  <div class="img about6"></div>
-                  <h3><a href="#">Visión</a></h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi possimus exercitationem reiciendis facilis quibusdam, tenetur voluptas perspiciatis ea fuga ex!</p>
-                </div>
-                <!-- ----  -->
+                
               </div>
             </div>
           </div>
@@ -185,7 +189,7 @@
         <div class="stories">
           <div class="container">
             <div class="section-title text-center">
-              <h3>Stories</h3>
+              <h2>Stories</h3>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore eaque impedit quae sint iusto recusandae!</p>
             </div>
             <!---->
@@ -229,7 +233,7 @@
         <div class="container">
           <div class="row my-3">
             <div class="col-10 mx-auto text-center">
-              <h1 class="text-uppercase">Últimos proyectos.</h1>
+              <h1>Últimos proyectos.</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, adipisci.</p>
             </div>
           </div>

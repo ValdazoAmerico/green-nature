@@ -4,18 +4,89 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 .nav-bg{
-    background: rgba(0,0,0,0.6);
+    background: rgba(255,255,255,0.5);
+    padding: 0!important;
 }
 .navbar-nav .nav-link{
-    color: #fff!important;
+    
+    font-size:1rem;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    border: 1px solid #000;
+    background: none;
+    color: #000!important;
+    padding:0.5rem 0;
 }
+.navbar-nav .nav-link:hover{
+    color: white!important;
+    background: #000;
+}
+.navbar-nav .nav-item{
+    margin: 0 2px;
+}
+
 .navbar-toggler{
     outline:none!important;
 }
+.logo-container{
+    width:  10%;
+}
+.logo{
+    width:100%;
+    height:100%;
+    position: relative;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    
+
+}
 /* Hero */
+.titulos{
+    position: absolute;
+    top:20%;
+    z-index: 4;
+}
+
+.titulo{
+    z-index:4;
+    text-align: center;
+    color: beige;
+    text-shadow: 1px 5px 15px black, 2px 2px 2px black;
+    text-transform: uppercase;
+    font-size: 4rem;
+    letter-spacing: 5px;
+    
+}
+.titulo2{
+    z-index:4;
+    text-align: center;
+    letter-spacing: 5px;
+    color: beige;
+    text-shadow: 1px 1px 1px black, 2px 2px 2px black;
+}
+
+.carousel-container p{
+    margin-top: 10rem!important;
+    color: beige;
+    font-size:1.2rem;
+    /* letter-spacing: 1px; */
+    line-height: 1.5;
+    text-shadow: 2px 2px 3px black;
+    
+    
+    
+}
+@media(max-width:767px){
+    .titulos{
+        top:5%;
+    }
+    
+}
 #hero{
     width:100%;
     height: 100vh;
@@ -29,7 +100,9 @@ body{
     top:0;
     width:130%;
     height: 95%;
-    background:linear-gradient(to right, rgba(0,0,0,0.9),rgba(255,255,255,0.2)),url("images/hero.jpg")center top no-repeat;
+    background:radial-gradient(rgba(0, 0, 0, 0.549) 30%, rgba(255, 255, 255, 0.404) 80%),url("images/hero3.jpg")center top no-repeat;
+    /* background-image:  url("images/hero2.jpg"), radial-gradient(black 20%, white 80%); */
+    /* background: radial-gradient(black 20%, white 80%), url("images/hero2.jpg")center top no-repeat; */
     border-radius: 0 0 50% 50%;
     z-index:0;
     transform:translateX(-50%) rotate(0deg);
@@ -59,6 +132,7 @@ body{
     left:0;
     right:0;
 }
+
 #hero h2{
     color: #fff;
     margin-bottom: 30px;
@@ -95,6 +169,7 @@ body{
     color:#fff;
     animation-delay:0.5s;
     border:2px solid rgba(255,255,255,0.5);
+    background: rgba(0, 0, 0, 0.329);
 }
 
 #hero .hero-btn:hover{
@@ -149,7 +224,9 @@ body{
 }
 
 /* Nosotros */
-
+#servicios > .container{
+    border:1px solid #000;
+}
 .tabs .nav-pills .nav-item{
     margin-bottom: 10px;
 }
@@ -169,8 +246,8 @@ body{
 }
 .tabs .nav-pills .nav-item .nav-link.active{
     color:#fff;
-    background: #053001;
-    border: 1px solid #9ef596;
+    background: rgba(0, 0, 0, 0.459);
+    /* border: 1px solid #9ef596; */
 }
 .tabs .nav-pills .nav-item .nav-link.active span{
     color:#fff;
@@ -194,28 +271,29 @@ body{
 }
 
 .about1{
-    background-image: url('images/about-6.jpg');
+    background-image: url('images/wall.jpg');
     background-size: cover;
 }
 .about2{
     background-image: url('images/about-2.jpg');
     background-size: cover;
+    filter: sepia(0.3);
 }
 .about3{
-    background-image: url('images/about-3.jpg');
+    background-image: url('images/electricidad.jpg');
     background-size: cover;
+    filter: sepia(0.3);
 }
 .about4{
-    background-image: url('images/about-4.jpg');
+    background-image: url('images/techo.jpg');
+    filter: sepia(0.3);
     background-size: cover;
 }
 .about5{
-    background-image: url('images/about-5.jpg');
+    background-image: url('images/plomeria.jpg');
     background-size: cover;
 }
-.about6{
-    background-image: url('images/about-1.jpg');
-}
+
 
 .story-box{
     padding:15px;
@@ -282,6 +360,9 @@ body{
     position: relative;
     overflow: hidden;
 }
+.project h1{
+    font-size:2rem!important;
+}
 .donation{
     background: rgba(0, 0, 0, 0.386);
     color: white;
@@ -309,15 +390,13 @@ body{
 .outline:before{
     content:'';
     position: absolute;
-    
-    
     top:4px;
     left:4px;
     right:4px;
     bottom:4px;
     opacity:0;
-        transition-duration: 0.3s;
-        transition-property: opacity;
+    transition-duration: 0.3s;
+    transition-property: opacity;
 }
 .outline:hover:before,
 .outline:focus:before,
