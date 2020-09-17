@@ -95,7 +95,8 @@ background-image: linear-gradient(to left, #9eb8cf, #5584af);
 animation: animate 3s linear infinite!important;
 -webkit-background-size: 500%;
 background-size:500%;
-text-align: center
+text-align: center;
+
 }
 @keyframes animate{
     0%{
@@ -117,11 +118,9 @@ text-align: center
 }
 
 .carousel-container p{
-    margin-top: 10rem!important;
+    margin-top: 5rem!important;
     color: beige;
     font-size:1.4rem;
-    /* letter-spacing: 1px; */
-    /* line-height: 1.5; */
     text-shadow: 2px 2px 3px black;
     
     
@@ -240,13 +239,13 @@ text-align: center
 @media(max-width:768px){
     
     .carousel-container p{
-        font-size:0.8rem;
+        font-size:1rem;
     }
     .titulo{
-        font-size:2rem;
+        font-size:2.5rem;
     }
     .titulo2{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
     #hero:after{
         width:180%;
@@ -280,7 +279,7 @@ text-align: center
         transform: translateX(-50%)translateY(20px)rotate(4deg);
     }
     .navbar-brand {
-        font-size:1.2rem;
+        font-size:0.8rem;
         
     }
     
@@ -662,88 +661,7 @@ text-align: center
     }
 }
 
-/* Donaciones */
-.donation-form .input-field .input-group{
-    width:100%;
-    border:1px solid #000;
-    border-radius: 7px;
-    padding:5px;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
-}
-.donation-form .input-field .input-group .input-group-text{
-    font-size:16px;
-    background:transparent;
-    border:0;
-    font-weight: bold;
-}
-.donation-form .input-field .input-group .form-control{
-    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-    border-bottom: 0;
-    border-top:0;
-    border-radius: 0;
-    border-right: 0;
-    padding: 0 0 0 25px;
-    height: 50px;
-    font-size:16px;
-    color: #000;
-    
-}
-.donation-form .input-field .input-group .form-control:placeholder{
-    font-size: 16px;
-    color: #7a7b7c;
-    font-weight: 400;
-}
-.donation-form .input-field .input-group .form-control:focus{
-    outline: none;
-    box-shadow: none;
-}
-.donation-form .amount .need{
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
-    padding: 18px 27px;
-    border-radius: 7px;
-    border: 1px solid #000;
-    display:block;
-    overflow: hidden;
-}
-@media(max-width: 767px){
-    .donation-form .amount .need{
-        display: block !important;
-        margin-top: 15px;
-    }
-}
-.donation-form .amount .need .select h5{
-    font-size: 16px;
-    color: #7a7b7c;
-    margin-bottom:0;
-}
-.donation-form .amount .need .funds label{
-    font-size:16px;
-    font-weight: 400;
-    color:#7a7b7c;
-    margin-bottom:0;
-}
-@media(max-width:767px){
-    .donation-form .amount .need .funds{
-        width:33.33%;
-        float:left;
-        margin-top:15px;
-    }
-}
-.donation-btn{
-    margin-top:50px;
-}
-.btn-don{
-    background:#fff;
-    color:#000;
-    font-weight: bold;
-    border-radius: 50px;
-    transition: all 0.5s ease;
-    border: 1px solid rgba(0, 0, 0, 0.741);
-}
-.btn:hover{
-    background:rgba(0, 0, 0, 0.741);
-    color:#fff;
-}
+
 
 /* Footer */
 
