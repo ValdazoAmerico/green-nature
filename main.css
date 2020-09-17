@@ -118,13 +118,10 @@ text-align: center;
 }
 
 .carousel-container p{
-    margin-top: 5rem!important;
+    margin-top: 20rem!important;
     color: beige;
     font-size:1.4rem;
-    text-shadow: 2px 2px 3px black;
-    
-    
-    
+    text-shadow: 2px 2px 3px black; 
 }
 /* @media(max-width:767px){
     .titulos{
@@ -282,7 +279,7 @@ text-align: center;
         transform: translateX(-50%)translateY(20px)rotate(4deg);
     }
     .navbar-brand {
-        font-size:0.8rem;
+        font-size:1rem;
         
     }
     #hero .carousel-control-next-icon, #hero .carousel-control-prev-icon{
@@ -409,208 +406,16 @@ text-align: center;
 }
 
 
-.story-box{
-    padding:15px;
-    background: #fff;
-    margin-bottom:30px;
-    position:relative;
-    
-}
-.story-icon{
-    width:90px;
-    height:90px;
-    text-align:center;
-    line-height: 90px;
-}
-.story-icon i{
-    font-size: 50px;
-    color:violet;
-    mix-blend-mode:  difference;
-    
-}
-.story-box h2{
-    font-size: 24px;
-    font-weight: bold;
-    color: violet;
-    mix-blend-mode: difference;
-    
-}
-.story-box p{
-    font-size: 16px;
-    font-weight: lighter;
-    color: violet;
-    mix-blend-mode: difference;
-    
-}
-.overlay{
-    margin:20px auto;
-    border:none;
-    padding:10px 44px;
-    font-size:20px;
-    position: relative;
-    display: inline-block;
-}
-.overlay:before{
-    transition:all 0.85s cubic-bezier(0.68,-0.55,0.265,1.55);
-    content:'';
-    width:50%;
-    height: 100%;
-    background: rgba(152, 207, 116, 0.781);
-    position:absolute;
-    top:0;
-    left:0;
-    border-radius: 10px 0px 0px 10px;
-}
-.overlay:hover:before{
-    background:rgba(152, 207, 116, 0.781);
-    width:100%;
-    border-radius: 10px;
-}
 
-/* Proyectos */
-.project-container{
-    background: white;
-    border:1px solid  rgba(0, 0, 0, 0.507);
-    border-radius: 5px;
-    position: relative;
-    overflow: hidden;
-}
-.project h1{
-    font-size:2rem!important;
-}
-.donation{
-    background: rgba(0, 0, 0, 0.386);
-    color: white;
-    padding: 2px 2.5px;
-    position: absolute;
-    right:0;
-    top:70%;
-    transform:translateX(110%);
-    transition: all 0.5s ease-in-out;
-}
-.donation:hover{
-    text-decoration: none;
-    
-}
-.project-container:hover .donation{
-    transform:translateX(-51.5%)
-}
-.outline{
-    display:inline-block;
-    vertical-align: middle;
-    transform:perspective(1px)translateZ(0);
-    box-shadow: 0 0 1px rgba(0,0,0,0);
-    position: relative;
-}
-.outline:before{
-    content:'';
-    position: absolute;
-    top:4px;
-    left:4px;
-    right:4px;
-    bottom:4px;
-    opacity:0;
-    transition-duration: 0.3s;
-    transition-property: opacity;
-}
-.outline:hover:before,
-.outline:focus:before,
-.outline:active:before{
-    opacity:1;
-}
-.grow{
-    display: inline-block;
-    vertical-align:middle;
-    transform:perspective(1px) translateZ(0);
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.796);
-    transition-duration: 0.3s;
-    transition-property: box-shadow, transform;
-}
-.grow:hover,
-.grow:focus,
-.grow:active{
-    box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.859);
-    transform: scale(1.1)
-}
-
-.team{
-    background: #fff;
-    padding: 60px 0 30px 0;
-}
-.team .team-1{
-    text-align:center;
-    margin-bottom:80px;
-    position:relative;
-}
-.team .team-1 .pic1{
-    border-radius: 4px;
-    overflow: hidden;
-}
-.team .team-1 img{
-    transition:all ease-in-out 0.4s;
-}
-.team .team-1:hover img{
-    transform: scale(1.1);
-}
-.team .team-1 .team-info{
-    position: absolute;
-    bottom:-48px;
-    left:20px;
-    right:20px;
-    background: linear-gradient(360deg, #b3f19b 0%, rgba(187, 240,152, 0.9) 35%, rgba(0,59,37,0.8)100%);
-    padding: 15px 0;
-    border-radius: 4px;
-}
-
-.team .team-1 h4 {
-    font-weight: bold;
-    margin-bottom:10px;
-    font-size: 16px;
-    color: #fff;
-    position:relative;
-    padding-bottom:10px;
-}
-.team .team-1 h4:after{
-    content: "";
-    position: absolute;
-    display:block;
-    width: 50px;
-    height: 1px;
-    background: #1d3501;
-    bottom:0;
-    left: calc(50% - 25px);
-}
-.team .team-1 span{
-    font-style: italic;
-    display:block;
-    font-size: 13px;
-    color:#fff;
-}
-.team .team-1 .social{
-    margin-top:15px;
-}
-.team .team-1 .social a{
-    transition: color 0.3s;
-    color:#01290d;
-}
-.team .team-1 .social a:hover{
-    color:#fff;
-}
-.team .team-1 .social i{
-    font-size: 16px;
-    margin: 0 2px;
-}
-@media (max-width: 992px){
-    .team .team-1{
-        margin-bottom: 100px;
-    }
-}
 
 
 /* Trabajos  */
 
 .trabajos{
     border:1px solid #000;
+}
+.trabajos p{
+    font-size:1.2rem;
 }
 
 .project-item{
