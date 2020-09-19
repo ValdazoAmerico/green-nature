@@ -77,13 +77,13 @@ body{
 
 .titulo{
 font-size:5rem;
-color:transparent;
+color:#5584af;
 letter-spacing: 5px;
-background-image: linear-gradient(to left, #9eb8cf, #5584af);
--webkit-background-clip: text;
-animation: animate 3s linear infinite!important;
--webkit-background-size: 500%;
-background-size:500%;
+/* background-image: linear-gradient(to left, #9eb8cf, #5584af);
+-webkit-background-clip: text; */
+/* animation: animate 3s linear infinite!important; */
+/* -webkit-background-size: 500%; */
+/* background-size:500%; */
 text-align: center;
 
 }
@@ -124,6 +124,7 @@ text-align: center;
     overflow:hidden;
     position:relative;
 }
+
 #hero:after{
     content:'';
     position:absolute;
@@ -204,12 +205,12 @@ text-align: center;
     color:beige;
     animation-delay:0.5s;
     border:2px solid beige;
-    background: #000;
+    /* background: #000; */
     
 }
 
 #hero .hero-btn:hover{
-    background: #073763;;
+    background: #073763;
     color: #fff;
     text-decoration: none;
     
@@ -284,7 +285,16 @@ text-align: center;
 /* Sobre Mi  */
 .sobremi{
     border:1px solid black;
+    opacity:0;
 }
+.opacidad{
+    animation: opacidad 2s ease forwards;
+}
+@keyframes opacidad{
+    0%{opacity:0}
+    100%{opacity:1}
+}
+
 
 .sobremi-texto{
     width:40%;
@@ -316,6 +326,9 @@ text-align: center;
 
 
 /* Nosotros */
+#servicios{
+    opacity:0;
+}
 #servicios > .container{
     border:1px solid #000;
 }
@@ -372,7 +385,7 @@ text-align: center;
 
 .about1{
     background-image: url('images/wall.jpg');
-    /* background-size: cover; */
+    background-size: cover;
 }
 .about2{
     background-image: url('images/about-2.jpg');
@@ -381,17 +394,17 @@ text-align: center;
 }
 .about3{
     background-image: url('images/electricidad.jpg');
-    /* background-size: cover; */
+    background-size: cover;
     filter: sepia(0.3);
 }
 .about4{
     background-image: url('images/techo.jpg');
     filter: sepia(0.3);
-    /* background-size: cover; */
+    background-size: cover;
 }
 .about5{
     background-image: url('images/plomeria.jpg');
-    /* background-size: cover; */
+    background-size: cover;
 }
 
 
@@ -399,7 +412,9 @@ text-align: center;
 
 
 /* Trabajos  */
-
+#trabajos{
+    opacity: 0;
+}
 .trabajos{
     border:1px solid #000;
 }
@@ -464,6 +479,9 @@ text-align: center;
 }
 
 /* Contacto */
+#contact{
+    opacity:0;
+}
 .get_in_touch{
     max-width:800px;
     margin:50px auto;
