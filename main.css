@@ -402,11 +402,11 @@ text-transform: uppercase;
 }
 
 .about1{
-    background-image: url('images/wall.jpg');
+    background-image: url('images/ladrillos.jpg');
     background-size: cover;
 }
 .about2{
-    background-image: url('images/about-2.jpg');
+    background-image: url('images/pintor.jpg');
     /* background-size: cover; */
     filter: sepia(0.3);
 }
@@ -416,12 +416,13 @@ text-transform: uppercase;
     filter: sepia(0.3);
 }
 .about4{
-    background-image: url('images/techo.jpg');
+    background-image: url('images/techo.jpeg');
     filter: sepia(0.3);
     background-size: cover;
+    /* background-repeat:no-repeat; */
 }
 .about5{
-    background-image: url('images/plomeria.jpg');
+    background-image: url('images/plomeria.jpeg');
     background-size: cover;
 }
 
